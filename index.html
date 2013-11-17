@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Simplemotioneffects by jaydee3</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/jaydee3/SimpleMotionEffects">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Simplemotioneffects</h1>
+            <h2>Simply add UIView Motion Effects in a single line!</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/jaydee3/SimpleMotionEffects/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/jaydee3/SimpleMotionEffects/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a name="simplemotioneffects" class="anchor" href="#simplemotioneffects"><span class="octicon octicon-link"></span></a>SimpleMotionEffects</h1>
+
+<p>This <strong>UIView Category</strong> provides the most simple API to create motion effects faster with only a single line of code.</p>
+
+<p><img src="https://github.com/jaydee3/SimpleMotionEffects/raw/master/gfx/screenshot.png" alt="Screenshot"></p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add the pod <code>pod 'SimpleMotionEffects'</code>,<br>
+or add the <code>UIView+SimpleMotionEffects.{h,m}</code> files manually to your project.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<ol>
+<li>Import the header <code>#import "UIView+SimpleMotionEffects.h"</code>
+</li>
+<li>Use any of the following methods on any UIView.</li>
+</ol><p>Just specify how much a view should move at maximum on both axes, when tilting:</p>
+
+<pre><code>- (void)addMotionEffectWithMovement:(CGPoint)movement;
+</code></pre>
+
+<p>Or specify, how much a view should move on both axes reacting to horizontalTilt oder verticalTilt only:</p>
+
+<pre><code>- (void)addMotionEffectOnHorizontalTilt:(CGPoint)horizontalMovement
+                         onVerticalTilt:(CGPoint)verticalMovement;
+</code></pre>
+
+<p>Or for more granular settings:</p>
+
+<pre><code>- (void)addMotionEffectWithType:(UIInterpolatingMotionEffectType)type
+                        keyPath:(NSString*)keyPath
+                          value:(CGFloat)value;
+
+- (void)addMotionEffectWithType:(UIInterpolatingMotionEffectType)type
+                        keyPath:(NSString*)keyPath
+                       minValue:(CGFloat)minValue
+                       maxValue:(CGFloat)maxValue;
+</code></pre>
+
+<h2>
+<a name="twitter" class="anchor" href="#twitter"><span class="octicon octicon-link"></span></a>Twitter</h2>
+
+<p>I'm <a href="http://twitter.com/jaydee3">@jaydee3</a> on Twitter.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/jaydee3">jaydee3</a> can be found on <a href="https://github.com/jaydee3/SimpleMotionEffects">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
